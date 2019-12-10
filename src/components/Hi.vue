@@ -1,9 +1,9 @@
 <template>
   <div class="hello">
-   <h1>这是欢迎页面</h1>
-      <van-button type="danger"  @click="jump">跳转login</van-button>
-        <van-button type="danger"  @click="jump2">跳转check</van-button>
-      <div><router-view></router-view></div>
+   <div>这是首页 我就想看首页</div>
+   <van-button type="danger" @click="$router.push('/hi/grid')">跳转按钮</van-button>
+   <van-button type="danger" @click="$router.push('/hi/swipe')">跳转按钮</van-button>
+   <router-view></router-view>
   </div>
 </template>
 
@@ -11,15 +11,13 @@
 export default {
  data(){
    return{
-     
+   
    }
- },
+  
+ }, 
  methods:{
    jump(){
-    this.$router.push('/hello/login');
-   },
-    jump2(){
-    this.$router.push('/hello/check');
+    this.$router.push('/hello')
    }
  }
 }
