@@ -24,4 +24,5 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### vant的实际应用  
-### 顺便用vuex写了购物车功能
+### 顺便用vuex写了购物车功能   
+### 新增ant-vue-design Vue.use要分开use
