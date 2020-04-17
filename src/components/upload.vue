@@ -17,11 +17,12 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   data() {
     return {
       fileList: [],
-      areaList:[],
+      areaList: [],
       searchResult: []
     };
   },
@@ -31,18 +32,20 @@ export default {
       // eslint-disable-next-line
       console.log(file);
     },
-       onSave() {
-      Toast('save');
+    onSave() {
+      Toast("save");
     },
     onDelete() {
-      Toast('delete');
+      Toast("delete");
     },
     onChangeDetail(val) {
       if (val) {
-        this.searchResult = [{
-          name: '黄龙万科中心',
-          address: '杭州市西湖区'
-        }];
+        this.searchResult = [
+          {
+            name: "黄龙万科中心",
+            address: "杭州市西湖区"
+          }
+        ];
       } else {
         this.searchResult = [];
       }

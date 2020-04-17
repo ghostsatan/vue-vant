@@ -6,6 +6,7 @@
     <router-link to="./slide" class="router">滑动</router-link>
     <router-link to="./upload" class="router">上传</router-link>
     <router-link to="./coupon" class="router">优惠</router-link>
+    <router-link to="./Ant" class="router">Ant-design</router-link>
 
     <van-tabbar v-model="active">
       <van-tabbar-item icon="home-o">首页</van-tabbar-item>
